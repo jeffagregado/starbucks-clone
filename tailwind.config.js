@@ -8,16 +8,32 @@ module.exports = {
       center: true,
       padding: '1.5rem',
     },
+    fontFamily: {
+      sans: ['Roboto', 'sans-serif', 'ui-sans-serif'],
+    },
+    backgroundSize: {
+      'auto-full': 'auto 100%',
+    },
+    backgroundPosition: {
+      half: '50%',
+    },
     extend: {
       colors: {
         primary: {
-          light: '#4e6baf',
-          DEFAULT: '#1f46a1',
-          dark: '#0d3aa3',
+          light: '#00b865',
+          DEFAULT: '#008248',
+          dark: '#1e3932',
         },
-        secondary: '#ff552b',
+        secondary: {
+          light: '#f3f1e7',
+          DEFAULT: '#f1f8f6',
+          dark: '#d4e9e2',
+        },
         mute: '#929191',
       },
+      backgroundImage: (theme) => ({
+        hero: "url('/xl-hero-desktop_2021.webp')",
+      }),
     },
   },
   variants: {

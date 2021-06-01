@@ -1,7 +1,12 @@
+import Hero from '../components/Hero'
+import Text from '../components/Text'
+
 export default function Home() {
   return (
-    <div className="container">
-      <h1 className=''>Hello World</h1>
-    </div>
+    <Hero>
+      <div className="container">
+        <Text>Hello World</Text>
+      </div>
+    </Hero>
   )
 }

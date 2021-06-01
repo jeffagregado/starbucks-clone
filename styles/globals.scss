@@ -2,6 +2,16 @@
 @import '~tailwindcss/components';
 @import '~tailwindcss/utilities';
 
+@layer components {
+  .link-transition {
+    @apply transition ease-in-out duration-200;
+  }
+
+  .nav_shadow-active {
+    box-shadow: inset 0 -6px #008248;
+  }
+}
+
 // @layer base {
 //   @font-face {
 //     font-family: SoDo Sans SemiBold;
@@ -18,21 +28,4 @@
 //       url('//db.onlinewebfonts.com/t/d7e8a95865396cddca89b00080d2cba6.svg#SoDo Sans SemiBold')
 //         format('svg');
 //   }
-// }
-
-// html,
-// body {
-//   padding: 0;
-//   margin: 0;
-//   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-//     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-// }
-
-// a {
-//   color: inherit;
-//   text-decoration: none;
-// }
-
-// * {
-//   box-sizing: border-box;
 // }

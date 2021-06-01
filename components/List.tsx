@@ -10,6 +10,8 @@ interface Props {
   to?: string | any
   dropdown?: boolean
   sublist?: boolean
+  bold?: boolean
+  semiBold?: boolean
 }
 
 const List = ({ children, className }: Props) => {
@@ -20,8 +22,18 @@ const List = ({ children, className }: Props) => {
   )
 }
 
-const Item = ({ children, className }: Props) => {
-  return <li className={setClassName(className && className)}>{children}</li>
+const Item = ({ children, className, bold, semiBold }: Props) => {
+  return (
+    <li
+      className={setClassName(
+        className && className,
+        bold && 'font-bold',
+        semiBold && 'font-semibold'
+      )}
+    >
+      {children}
+    </li>
+  )
 }
 
 const ItemLink = ({ children, to, sublist, className }: Props) => (
