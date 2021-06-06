@@ -9,7 +9,7 @@ module.exports = {
       padding: '1.5rem',
     },
     fontFamily: {
-      sans: ['Roboto', 'sans-serif', 'ui-sans-serif'],
+      roboto: ['Roboto', 'sans-serif', 'ui-sans-serif'],
     },
     backgroundSize: {
       'auto-full': 'auto 100%',
